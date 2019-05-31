@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <div class="container">
+        <br>
+        <h4>
+                Register here :
+        </h4>
+        <br>
+        <form action="/registration" class="form-inline" method="POST">
+            <input type="text" class="form-control" placeholder="Entername" name="Username" value="{{request.form.Username}}"> 
+
+            <input type="password" class="form-control" placeholder="Password" name="Password" value="{{request.form.Password}}">
+
+            <input type="email" class="form-control" placeholder="Email" name="Email" value="{{request.form.Email}}">
+
+            <input class="btn btn-default" type="submit" value="submit"> 
+
+            <!-- <input type="button" value="login">         -->
+
+        </form>
+        <p>
+            {{ error }}
+        </p>
+
+        </div>
+    </body>
+</html>
